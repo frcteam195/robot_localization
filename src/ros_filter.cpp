@@ -2076,6 +2076,7 @@ namespace RobotLocalization
 
     last_reset_transform.setIdentity();
     last_reset_transform.setRotation(q);
+    has_last_reset = true;
 
     // Prepare the pose data (really just using this to transform it into the target frame).
     // Twist data is going to get zeroed out.
